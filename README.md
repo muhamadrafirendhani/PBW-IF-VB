@@ -82,7 +82,7 @@ Contoh struktur direktori sebagai *berikut:*
   <tr>
     <td align="center"><a href="#"><img src="https://avatars0.githubusercontent.com/u/34052001?s=460&v=4" width="100px;"
         alt="yysofiyan" /><br /><sub><b>yysofiyan</b></sub></a><br /><a</a></td>
-    <td align="center"><a href="https://github.com/Pemrograman-Berbasis-Web/PBW-IF-VA/graphs/contributors"><img src="https://contrib.rocks/image?repo=Pemrograman-Berbasis-Web/PBW-IF-VA" /></a>
+    <td align="center"><a href="https://github.com/Pemrograman-Berbasis-Web/PBW-IF-VB/graphs/contributors"><img src="https://contrib.rocks/image?repo=Pemrograman-Berbasis-Web/PBW-IF-VB" /></a>
   </tr>
 </table>
 
