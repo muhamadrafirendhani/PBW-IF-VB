@@ -7,6 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
+
             "name": "Open Prak1.html",
             "file": "c:\\Users\\wida seoulida\\Desktop\\PBW-IF-VB\\220660121107\\Praktikum\\Prak1.html"
         }
