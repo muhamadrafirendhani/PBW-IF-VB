@@ -1,4 +1,4 @@
-/* Reset default margins and paddings */
+:optional/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #eaeaea;
+    background-color: #afbcf5;
     color: #333;
     line-height: 1.6;
     padding: 20px;
