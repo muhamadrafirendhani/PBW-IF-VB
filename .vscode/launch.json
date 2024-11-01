@@ -7,9 +7,10 @@
         {
             "type": "chrome",
             "request": "launch",
+            "name": "Open index.html",
+            "file": "c:\\Users\\62821\\Desktop\\PBW-IF-VB\\220660121102\\praktikum_html\\index.html"
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
-
             "type": "chrome",
             "request": "launch",
 
