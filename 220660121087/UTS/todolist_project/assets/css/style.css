@@ -1,0 +1,68 @@
+/* style.css */
+body {
+    background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #f0f0f0 25%, transparent 25%),
+                linear-gradient(45deg, #f0f0f0 25%, transparent 25%);
+    background-size: 100px 100px; /* Ukuran pola */
+    color: #333; /* Warna teks */
+    font-family: 'Lato', sans-serif; /* Menggunakan font Lato */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+}
+
+li {
+    margin: 10px 0; /* Jarak antar item */
+    padding: 10px; /* Padding dalam item */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang item dengan transparansi */
+    border-radius: 5px; /* Sudut membulat */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Membagi ruang antara elemen */
+    align-items: center; /* Memusatkan item secara vertikal */
+}
+
+a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #007BFF; /* Warna tautan */
+    margin-left: 10px; /* Jarak antara tautan */
+}
+
+a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+form {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: center; /* Memusatkan form */
+    margin-top: 30px; /* Jarak atas */
+}
+
+form input[type="text"] {
+    padding: 12px; /* Padding dalam input */
+    border: 2px solid #ced4da; /* Border */
+    border-radius: 5px; /* Sudut membulat */
+    width: 250px; /* Lebar input */
+    margin-right: 10px; /* Jarak antara input dan tombol */
+}
+
+form button {
+    padding: 12px 20px; /* Padding dalam tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menampilkan kursor pointer saat hover */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+form button:hover {
+    background-color: #218838; /* Warna latar belakang saat hover */
+}
