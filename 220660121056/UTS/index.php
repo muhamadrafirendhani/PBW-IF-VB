@@ -58,7 +58,7 @@ require 'views/listTodos.php';
 
     <!-- PHP content -->
     <h1>Halo, Selamat Datang!</h1>
-    <p>ini.</p>
+    <p>Ini a.</p>
 
     <!-- Menghubungkan file JavaScript -->
     <script src="script.js"></script>
