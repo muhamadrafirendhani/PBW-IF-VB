@@ -1,7 +1,7 @@
 <?php
 // controllers/TodoController.php
 // Memanggil file TodoModel.php untuk menggunakan class TodoModel
-require_once 'models/TodoModel.php';
+require_once 'models/TodoModels.php';
 /**
  * Kelas yang bertanggung jawab untuk menangani permintaan terkait TodoItems
  */
@@ -53,4 +53,12 @@ class TodoController {
     public function delete($id) {
         return $this->model->deleteTodo($id);
     }
+
+    // controllers/TodoController.php
+    public function edit($id, $task) {
+    return $this->model->updateTodoTask($id, $task);
+    }
+
+    // controllers/TodoController.php
+
 }
