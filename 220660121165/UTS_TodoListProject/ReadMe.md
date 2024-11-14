@@ -15,27 +15,35 @@ DOMContentLoaded Event:
 document.addEventListener('DOMContentLoaded', checkNotification);
 Menjalankan checkNotification setelah seluruh halaman (DOM) selesai dimuat. Ini memastikan bahwa notifikasi tidak muncul sebelum halaman siap ditampilkan.
 
-CSS: (Jika Menggunakan Notifikasi Kustom)
-Jika Anda ingin mengkustomisasi notifikasi (selain menggunakan alert), kode CSS ini menyediakan gaya untuk notifikasi yang muncul sebagai pesan kecil di bagian atas halaman. Kode CSS ini opsional jika Anda beralih menggunakan alert.
+CSS ini mengatur gaya visual untuk halaman web dengan beberapa elemen menarik, seperti efek latar belakang animasi, gelombang, dan elemen UI yang diatur untuk daftar dan notifikasi. Berikut adalah penjelasan dari setiap bagian:
 
-Penjelasan Kode CSS:
-Positioning:
+Body
+Background Gradient: Menggunakan gradien linear dengan beberapa warna untuk latar belakang halaman, yang memberi efek warna beragam dari ungu ke biru, lalu ke hijau dan merah.
+Animation: Animasi gradient diterapkan, yang mengubah posisi latar belakang dari awal hingga akhir (0% hingga 100%) dalam waktu 15 detik, dengan pergerakan latar belakang yang terus-menerus (infinite).
+Background Size: Diatur agar lebih besar dari viewport (400% 400%) untuk menciptakan efek pergerakan latar belakang yang halus.
+Keyframes Gradient
+Keyframes ini mengontrol pergerakan animasi latar belakang dengan menggeser posisi latar dari 0% ke 100%, lalu kembali ke 0%, menciptakan efek gradien yang bergerak.
 
-position: fixed; memastikan notifikasi tetap berada di posisi yang sama pada layar, bahkan ketika halaman di-scroll.
-top: 20px; dan right: 20px; menempatkan notifikasi 20px dari atas dan kanan layar.
-Background and Text Styling:
+Wave
+Background: Warna putih semi-transparan untuk elemen wave di bagian bawah.
+Animation: Animasi wave membuat elemen ini bergerak horizontal secara bergelombang, menciptakan efek ombak.
+Positioning: Menempatkan wave pada posisi tetap di bagian bawah, sehingga tetap berada di bawah konten.
+Nth Child Selectors: Variasi nth-of-type(2) dan nth-of-type(3) memberikan efek ombak bertumpuk, bergerak dengan kecepatan berbeda.
 
-background-color: #4CAF50; memberikan warna hijau (biasanya digunakan untuk menandakan sukses).
-color: white; mengatur warna teks menjadi putih untuk kontras yang baik.
-Padding and Border Radius:
+Keyframes Wave
+Memberikan gerakan maju-mundur pada elemen wave, menciptakan efek ombak berkelanjutan.
 
-padding: 10px; memberi jarak di dalam elemen, membuat teks tidak menempel langsung ke tepi.
-border-radius: 5px; membuat sudut elemen menjadi bulat, sehingga tampil lebih lembut.
-Box Shadow and Opacity:
+Heading (h1)
+Mengatur teks judul (h1) agar berada di tengah dengan font sans-serif dan warna putih.
 
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); menambahkan bayangan di sekitar elemen, memberikan efek kedalaman.
-opacity: 0.9; membuat notifikasi sedikit transparan.
-Z-Index:
+Unordered List (ul) dan List Items (li)
+List Style: Menghilangkan penanda list (list-style-type: none).
+Item Layout: Setiap item di dalam daftar (li) menggunakan Flexbox agar item dalam list disejajarkan secara horizontal dan memiliki jarak seimbang.
+Styling: Masing-masing item berbentuk kotak dengan bayangan halus dan sudut melengkung.
 
-z-index: 1000; memastikan notifikasi berada di depan elemen lain di halaman.
-Dengan penjelasan ini, Anda sekarang memahami bagaimana JavaScript dan CSS bekerja untuk membuat notifikasi alert atau notifikasi kustom pada aplikasi Todo List.
+Links (a)
+Link Styling: Warna biru untuk link, dan efek garis bawah saat kursor hover.
+
+Form Input dan Button
+Input: Styling sederhana dengan padding dan border radius untuk membentuk kotak.
+Button: Tombol pengiriman dengan warna biru, berubah menjadi biru gelap saat hover, memberikan umpan balik visual.
