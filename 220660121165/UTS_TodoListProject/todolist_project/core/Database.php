@@ -7,11 +7,10 @@ class Database {
     private $username = 'root';
     private $password = '';
     public $conn;
-//udalah yang ada dulu aja, paling bentar lagi juga dateng
-//jam berapa sih? duh uda sore nih uda jam segini. uda dulu aja yu besok lanjut lagi
+
     /**
      * Membuat objek koneksi PDO ke database.
-     *  
+     * 
      * Metode ini akan mencoba membuat objek koneksi PDO ke database yang diatur
      * oleh variabel kelas $host, $db_name, $username dan $password. Jika
      * koneksi berhasil maka metode ini akan mengembalikan objek koneksi PDO,
@@ -36,3 +35,4 @@ class Database {
         return $this->conn;
     }
 }
+?>
