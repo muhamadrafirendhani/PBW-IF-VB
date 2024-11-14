@@ -3,16 +3,9 @@
 <html>
 <head>
     <title>Todo List</title>
-    <!--
-        style.CSS
-        Berfungsi untuk membuat tampilan lebih menarik
-    -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!--
-        script.js
-        Berfungsi untuk mengirimkan data ke server
-        serta menampilkan alert jika data berhasil di input
-    -->
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="assets/js/script.js"></script>
     
 </head>
