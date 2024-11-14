@@ -1,0 +1,150 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: min(95vw, 31.25em);
+  margin: auto;
+  top: 1.875em;
+}
+
+.container {
+  padding: 2em 2.5em;
+  background-color: beige;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+  border-radius: 0.8em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+/* Styling untuk daftar tugas */
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 1fr auto auto; /* Buat grid dengan 3 kolom */
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  padding: 12px;
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li a.complete, li a.delete {
+  font-size: 1rem;
+  padding: 0.4em;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+li a.complete {
+  background-color: #0085b9; /* Biru untuk completed */
+  margin-left: 5px;
+}
+
+li a.delete {
+  background-color: maroon; /* Merah untuk delete */
+  margin-left: 5px;
+}
+
+/* Hover efek untuk ikon */
+li a.complete:hover {
+  background-color: grey;
+}
+
+li a.delete:hover {
+  background-color: grey;
+}
+
+
+/* Styling untuk tombol submit */
+button {
+  background: maroon;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2em;
+}
+
+button:hover {
+  background-color: grey;
+}
+
+/* Styling untuk input task */
+input[name="task"] {
+  width: calc(100% - 120px);
+  padding: 0.5em;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#error{
+  text-align: center;
+  background-color: white;
+  color: maroon;
+  margin-top: 1.5m;
+  padding: 1em 0;
+  border-radius: 0.8em;
+  display: none;
+}
+
+/* Styling untuk notifikasi */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+#pending-tasks span {
+  color: maroon;
+  font-size: 1.1em;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
