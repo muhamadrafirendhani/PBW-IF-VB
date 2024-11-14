@@ -1,0 +1,96 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   min-height: 100vh;
+   background-color: rgb(158, 122, 169);
+}
+
+.container {
+   position: relative;
+   height: 400px;
+   width: 420px;
+   background: white;
+   border-color: black;
+   border-radius: 20px;
+   color: black;
+   justify-content: center;
+   align-items: center;
+}
+
+.todo {
+   position: relative;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+input {
+   flex: 1;
+   border: none;
+   outline: none;
+   background: rgb(237, 235, 235);
+   padding-left: 10px;
+   border-radius: 20px;
+   padding: 10px;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+form button {
+   border: none;
+   color: rgb(155, 100, 166);
+   font-size: 28px;
+   cursor: pointer;
+   background: none;
+}
+
+ul li {
+   list-style-type: none;
+   font-size: 14px;
+   background: #ecf0f1;
+   margin: 10px 0;
+   border-radius: 20px;
+   margin-left: 20px;
+   margin-top: 10px;
+   margin-right: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.todo-item {
+   display: flex;
+   justify-content: space-between; /* Teks di kiri, ikon di kanan */
+   align-items: center;
+   padding: 10px 20px;
+   background-color: #ecf0f1;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+
+.todo-text {
+   flex-grow: 1; 
+   font-size: 14px;
+}
+
+.todo-actions {
+   display: flex;
+   gap: 10px; /* Jarak antar ikon */
+}
+
+.complete-todo, .delete-todo {
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.notifications {
+   color: rebeccapurple;
+}
