@@ -1,0 +1,96 @@
+/* style.css */
+
+/* Mengatur font, background dan warna umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Menata judul */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Menata daftar todo */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+/* Menata tiap item todo */
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Menata task yang sudah selesai */
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda; /* Warna hijau muda */
+    color: #155724;
+}
+
+/* Hover effect pada item todo */
+li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Menata link aksi (Mark as completed, Delete) */
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Hover effect untuk link */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Menata form input dan button */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

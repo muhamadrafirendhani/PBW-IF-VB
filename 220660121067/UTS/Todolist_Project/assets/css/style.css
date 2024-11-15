@@ -1,0 +1,163 @@
+/* style.css */
+
+/* Mengatur font, background dan warna umum */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #ccc, #b9a4a4,#ccc); /* Gradien warna */
+    background-size: 400% 400%; /* Ukuran latar belakang untuk animasi */
+    animation: backgroundAnimation 10s ease infinite; /* Menerapkan animasi */
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 100%; /* Mulai dari atas */
+    }
+    50% {
+        background-position: 100% 0%; /* Bergerak ke bawah */
+    }
+    100% {
+        background-position: 0% 100%; /* Kembali ke atas */
+    }
+}
+
+
+/* Menata judul */
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 42px;
+    margin-top: 40px;
+}
+
+/* Menata daftar todo agar berada di tengah */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
+}
+/* Menata item todo (Deskripsi tugas) */
+li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;        
+
+}
+
+/* Teks Todo */
+li .task {
+    max-width: calc(100% - 120px); 
+    white-space: nowrap;           
+    overflow: hidden;             
+    text-overflow: ellipsis;       
+    flex-grow: 1;                  
+}
+
+li .task.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Menata link aksi (Mark as completed, Delete) */
+li .actions {
+    display: flex;                
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Menata link aksi (Mark as completed, Delete) */
+a {
+    padding: 8px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Menata tombol 'Mark as completed' */
+a.complete {
+    background-color: #28a745; /* Hijau */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek hover pada tombol 'Mark as completed' */
+a.complete:hover {
+    background-color: #218838; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Menata tombol 'Delete' */
+a.delete {
+    background-color: #dc3545; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efek hover pada tombol 'Delete' */
+a.delete:hover {
+    background-color: #c82333; 
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek ketika tombol diklik */
+a:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menata form input dan button */
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Menata Ukuran Text Field*/
+input[type="text"] {
+    padding: 10px;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 16px;
+    margin-bottom: 15px; 
+
+}
+
+/* Membuat button lebih menarik */
+button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #7e80eb, #615e8f); 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f5bc96, #9b742c); 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+button:active {
+    transform: translateY(0); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
