@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Reset CSS dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Gaya judul */
+h1 {
+    color: #005a4e;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #3b5a1f;
+}
+
+/* Gaya ul untuk daftar todo */
+ul {
+    list-style-type: none;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+/* Gaya li untuk item todo */
+li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk link Mark as completed dan Delete */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gaya form untuk menambah todo baru */
+form {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Gaya input text untuk form */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Gaya button untuk form */
+button[type="submit"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Gaya untuk todo yang sudah selesai */
+li.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
