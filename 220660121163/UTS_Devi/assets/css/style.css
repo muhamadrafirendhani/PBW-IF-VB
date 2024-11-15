@@ -1,14 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #6272b6;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    color: #4CAF50;
+    color: #333;
 }
 
 ul {
@@ -21,20 +20,19 @@ li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-a {
+li a {
     text-decoration: none;
-    color: #007BFF;
-    transition: color 0.3s;
+    color: #007bff;
+    margin-left: 10px;
 }
 
-a:hover {
-    color: #0056b3;
+li a:hover {
+    text-decoration: underline;
 }
 
 form {
@@ -43,24 +41,23 @@ form {
     margin-top: 20px;
 }
 
-input[type="text"] {
+form input[type="text"] {
     padding: 10px;
+    width: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 300px;
-    margin-right: 10px;
 }
 
-button {
+form button {
     padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
     border: none;
+    background-color: #007bff;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-left: 10px;
 }
 
-button:hover {
-    background-color: #45a049;
+form button:hover {
+    background-color: #0056b3;
 }
