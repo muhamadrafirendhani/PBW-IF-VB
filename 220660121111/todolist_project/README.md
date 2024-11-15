@@ -8,13 +8,13 @@ Ini adalah aplikasi Todo List sederhana untuk mencatat tugas harian. Aplikasi in
 - **Edit Tugas**: Memungkinkan pengguna untuk mengedit teks tugas.
 - **Tandai Selesai**: Menandai tugas sebagai selesai dengan memberikan tanda silang pada teks.
 - **Hapus Tugas**: Menghapus tugas dari daftar.
-- **Filter Tugas**: Menampilkan tugas yang belum selesai, sudah selesai, maupun keduanya.
-- **Penyimpanan Lokal**: Menyimpan daftar tugas dalam lokal di browser sehingga tetap tersedia setelah halaman dimuat ulang.
+- **Filter Tugas**: Menampilkan tugas yang belum selesai, sudah selesai, maupun keseluruhan tugas.
+- **Penyimpanan Lokal**: Menyimpan daftar tugas secara lokal di browser agar tetap tersedia setelah halaman dimuat ulang.
 
 ## Cara Kerja Fungsionalitas
 
 1. **Filter Tugas**
-   - Pengguna dapat memfilter tugas berdasarkan statusnya: "Semua", "Selesai", dan "Belum Selesai".
+   - Pengguna dapat memfilter tugas berdasarkan statusnya: "Semua", "Selesai", atau "Belum Selesai".
    - JavaScript digunakan untuk memanipulasi DOM dan menyembunyikan atau menampilkan tugas sesuai dengan statusnya.
 
 2. **Animasi Penambahan dan Penghapusan**
@@ -34,4 +34,3 @@ Ini adalah aplikasi Todo List sederhana untuk mencatat tugas harian. Aplikasi in
 ## Teknologi yang Digunakan
 - **HTML/CSS**: Untuk struktur dan styling aplikasi.
 - **JavaScript**: Untuk manipulasi DOM, filter tugas, animasi, dan penyimpanan lokal.
-
