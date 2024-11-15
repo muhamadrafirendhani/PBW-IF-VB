@@ -89,20 +89,5 @@ class TodoModel {
         $stmt->bindParam(":id", $id);
         return $stmt->execute();
     }
-
-    // models/TodoModel.php
-    public function updateTodoTask($id, $task,) {
-        $query = "UPDATE " . $this->table_name . " SET task = :task, updated_at = NOW() WHERE id = :id";
-        $stmt = $this->conn->prepare($query);
-        $stmt->bindParam(":task", $task);
-        $stmt->bindParam(":id", $id);
-        return $stmt->execute();
-    }
-
-    // models/TodoModel.php
-
-// Tetap dengan method-method yang sudah ada
-
-
 }
 ?>
