@@ -72,7 +72,7 @@ form input[type="text"] {
 
 form button {
     padding: 12px 20px; /* Padding dalam tombol */
-    background-color: #FF9800; /* Warna latar belakang tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
     color: white; /* Warna teks tombol */
     border: none; /* Menghilangkan border default */
     border-radius: 5px; /* Sudut membulat */
