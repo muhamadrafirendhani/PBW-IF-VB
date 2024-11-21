@@ -12,6 +12,7 @@
 require_once 'controllers/TodoController.php';
 
 $controller = new TodoController();
+$todos = $controller->index();
 $action = $_GET['action'] ?? null;
 
 // Menangani parameter aksi
