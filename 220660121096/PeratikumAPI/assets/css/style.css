@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12em;
+    background-image: url("foto\ saya.jpg");
+    background-size: cover; /* Options: 'cover', 'contain', or specific size */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+}
+
+  
+
+/* Todo List Container */
+h1 {
+    color: #fdfbfb;
+    margin-bottom: 1em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+a {
+    color: #0212fc;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1em;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #0212fc;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #030303;
+}
+
+/* Notification Styling */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #0212fc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.error {
+    background-color: #f44336;
+}
