@@ -1,1 +1,0 @@
-Saya Suci Sulastri
