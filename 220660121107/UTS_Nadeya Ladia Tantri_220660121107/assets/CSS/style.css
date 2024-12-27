@@ -1,0 +1,193 @@
+body {
+    background: rgb(238, 217, 190); /* untuk menambah warna background */
+}
+
+* {
+    padding: 0%; /* Menghapus padding default */
+    margin: 0%; /* Menghapus margin default */
+    box-sizing: border-box; /* Mengatur ukuran elemen termasuk padding dan border */
+}
+
+.empty {
+    font-family: sans-serif; /* Mengatur jenis font */
+    font-size: 16px; /* Ukuran font */
+    text-align: center; /* Mengatur teks agar rata tengah */
+    color: beige; /* Warna teks */
+}
+
+.checked {
+    color: aquamarine !important; /* Warna teks untuk item yang sudah selesai */
+    text-decoration: line-through; /* Garis coretan pada teks */
+}
+
+.todo {
+    margin: 15px 0; /* Margin atas dan bawah */
+}
+
+.todo-item h2 {
+    display: inline-block; /* Menampilkan elemen inline */
+    padding: 5px 0px; /* Padding atas dan bawah */
+    font-family: sans-serif; /* Mengatur jenis font */
+    font-size: 17px; /* Ukuran font */
+    color: #a00505; /* Warna teks */
+}
+
+.todo-item small {
+    display: block; /* Menampilkan elemen sebagai blok */
+    width: 100%; /* Lebar 100% */
+    padding: 5px 0px; /* Padding atas dan bawah */
+}
+
+.todo input {
+    border: 5px solid #ccc; /* Menambahkan border abu-abu */
+    border-radius: 5px; /* Membuat sudut border menjadi bulat */
+    padding: 10px; /* Menambahkan padding di dalam item */
+    margin: 5px 0; /* Memberikan jarak antara item */
+    display: flex; /* Mengatur item agar bisa menggunakan flexbox */
+    align-items: center; /* Mengatur item agar terpusat secara vertikal */
+    background-color: #f9f9f9; /* Memberikan latar belakang yang lebih terang */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.todo button {
+    border: 5px solid #ccc; /* Menambahkan border abu-abu */
+    border-radius: 5px; /* Membuat sudut border menjadi bulat */
+    padding: 10px; /* Menambahkan padding di dalam item */
+    margin: 10px 0; /* Memberikan jarak antara item */
+    display: flex; /* Mengatur item agar bisa menggunakan flexbox */
+    align-items: center; /* Mengatur item agar terpusat secara vertikal */
+    background-color: #f9f9f9; /* Memberikan latar belakang yang lebih terang */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+.container {
+    max-width: 800px; /* Lebar maksimum kontainer */
+    margin: auto; /* Pusatkan kontainer */
+    background: rgb(245, 216, 216); /* Warna latar belakang kontainer */
+    padding: 10px; /* Padding dalam kontainer */
+    border-radius: 20px; /* Membuat sudut border menjadi bulat */
+    box-shadow: 0 2px 10px rgba(214, 81, 81, 0.1); /* Efek bayangan */
+    color: #c91016; /* Warna teks */
+}
+
+h1 {
+    color: #a00505; /* Warna teks judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-size: 75px; /* Ukuran font judul */
+    font-style: italic; /* Mengatur teks judul menjadi miring */
+}
+
+.text-center {
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+/* assets/CSS/style.css */
+
+/* Gaya untuk item Todo */
+.todo-item ul {
+    list-style-type: none; /* Menghapus bullet point pada list */
+    padding: 10px; /* Menghapus padding default */
+    margin: 10px 0px; /* Margin atas dan bawah */
+}
+
+.todo-item li {
+    border: 1px solid #ccc; /* Menambahkan border abu-abu */
+    border-radius: 5px; /* Membuat sudut border menjadi bulat */
+    padding: 10px; /* Menambahkan padding di dalam item */
+    margin: 5px 0; /* Memberikan jarak antara item */
+    display: flex; /* Mengatur item agar bisa menggunakan flexbox */
+    align-items: center; /* Mengatur item agar terpusat secara vertikal */
+    background-color: #7d817d; /* Memberikan latar belakang yang lebih terang */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+    color: #fff9f8; /* Warna teks */
+}
+
+/* Efek hover untuk item Todo */
+.todo-item li:hover {
+    background-color: #e0f7fa; /* Mengubah latar belakang saat hover */
+}
+
+/* Gaya untuk checkbox */
+.todo-item input[type="checkbox"] {
+    margin-right: 10px; /* Memberikan jarak antara checkbox dan teks */
+    transform: scale(1.2); /* Mengubah ukuran checkbox */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+/* Gaya untuk item yang telah selesai */
+.todo-item input[type="checkbox"]:checked + span {
+    text-decoration: line-through; /* Menggarisbawahi teks yang sudah selesai */
+    color: rgb(204, 32, 32); /* Mengubah warna teks yang sudah selesai */
+}
+
+/* Gaya untuk tombol Delete */
+.todo-item a {
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    color: white; /* Warna teks */
+    background-color: #a00505; /* Warna latar belakang merah */
+    padding: 5px 10px; /* Padding di dalam tombol */
+    border-radius: 5px; /* Sudut tombol yang melengkung */
+    margin-left: 5px; /* Jarak antara tombol Delete dan teks */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek hover untuk tombol Delete */
+.todo-item a:hover {
+    background-color: #1a1885; /* Warna latar belakang saat hover */
+}
+
+/* Gaya untuk elemen <ul> */
+.todo-item ul {
+    list-style-type: none; /* Menghapus bullet point default */
+    padding: 10px; /* Padding di dalam <ul> */
+    margin: 20px 1px; /* Margin atas dan bawah */
+    border: 1px solid #cccccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut border yang melengkung */
+    background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+/* Gaya untuk elemen <li> */
+.todo-item ul li {
+    padding: 8px; /* Padding di dalam <li> */
+    border-bottom: 1px solid #360c0c; /* Border bawah untuk setiap item */
+}
+
+/* Menghapus border bawah untuk item terakhir */
+.todo-item ul li:last-child {
+    border-bottom: none; /* Menghapus border bawah pada item terakhir */
+}
+
+/* Gaya untuk tombol dalam .button-group */
+.button-group {
+    display: flex; /* Menampilkan tombol dalam flexbox */
+    gap: 10px; /* Jarak antara tombol */
+    margin-left: auto; /* Menempatkan tombol di kanan */
+}
+
+.mark-completed {
+    background-color: green; /* Warna latar belakang tombol */
+    color: white; /* Warna teks */
+    padding: 5px 10px; /* Padding tombol */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Sudut melengkung */
+    text-decoration: none; /* Menghapus garis bawah */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.mark-completed:hover {
+    background-color: darkgreen; /* Warna saat hover */
+}
+
+.delete-button {
+    background-color: #a00505; /* Warna latar tombol Delete */
+    color: white; /* Warna teks tombol */
+    padding: 5px 10px; /* Padding tombol */
+    border: none; /* Menghapus border */
+    border-radius: 5px; /* Sudut melengkung tombol */
+    text-decoration: none; /* Menghapus garis bawah */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.delete-button:hover {
+    background-color: #1a1885; /* Warna latar belakang saat hover */
+}

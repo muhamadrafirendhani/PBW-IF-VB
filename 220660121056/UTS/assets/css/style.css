@@ -1,0 +1,89 @@
+/* CSS untuk background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Agar halaman tidak scroll */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,#ffffff, #03c4ff, #42aeec, #000000);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1; /* Background berada di belakang konten */
+}
+
+/* Animasi gradasi */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    50% { background-position: 50% 100%;}
+    100% { background-position: 0% 50%; }
+}
+
+/* Gaya untuk konten */
+h1, p {
+    color: #ebe3e3;
+    text-align: center;
+    margin-top: 20%;
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+    border-left: 2px solid #ccc; /* Garis di kiri */
+    border-right: 2px solid #ccc; /* Garis di kanan */
+}
+
+li {
+    margin: 10px 0; /* Jarak antar item */
+    padding: 10px; /* Padding dalam item */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang item dengan transparansi */
+    border-radius: 5px; /* Sudut membulat */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: space-between; /* Membagi ruang antara elemen */
+    align-items: center; /* Memusatkan item secara vertikal */
+    border-bottom: 1px solid #ccc; /* Menambahkan garis bawah seperti tabel */
+    border-style:outset ;
+}
+
+li:last-child {
+    border-bottom: none; /* Menghilangkan garis bawah pada item terakhir */
+}
+
+form {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: center; /* Memusatkan form */
+    margin-top: 30px; /* Jarak atas */
+}
+
+form input[type="text"] {
+    padding: 12px; /* Padding dalam input */
+    border: 2px solid #ced4da; /* Border */
+    border-radius: 5px; /* Sudut membulat */
+    width: 250px; /* Lebar input */
+    margin-right: 10px; /* Jarak antara input dan tombol */
+}
+
+form button {
+    padding: 12px 20px; /* Padding dalam tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Menampilkan kursor pointer saat hover */
+    transition: background-color 0.3s; /* Transisi untuk efek hover */
+}
+
+form button:hover {
+    background-color: #c57805; /* Warna latar belakang saat hover */
+}
+
+
+/* style.css */
+

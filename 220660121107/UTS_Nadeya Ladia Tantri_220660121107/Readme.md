@@ -1,0 +1,3 @@
+1. CSS, disini CSS berfungsi untuk membuat tampilan dari "My To Do List" menjadi lebih menarik dan indah.
+2. JavaScript, berguna untuk memunculkan alert ketika akan menghapus muncul alert "apakah kamu yakin akan memnghapus tugas ini?", dan ketika akan menyelsaikannya atau mark as complete akan muncul alert "selamat tugas mu telah selesai"
+3. data yang diinputkan akan tercatat atau masuk pada database todolist di xampp.
